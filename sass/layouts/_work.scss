@@ -1,0 +1,57 @@
+.work.section{
+    padding-top: 0px;
+}
+.work__list{
+    display: flex;
+    justify-content:center;
+    .work__item {
+     width: 370px;
+    }
+    .work__item:not(:last-child){
+    margin-right: 30px;
+}
+}
+
+
+
+
+.work__title,
+.clients__title{
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.work .title,
+.team .title,
+.clients .title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+}
+.work__img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+.work__box{
+    position: relative;
+    overflow: hidden;
+}
+.work__label{
+    @include flex-align-justify;
+    width: 370px;
+    height: 70px; ;
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+    left: 0;
+    bottom: 0;
+    margin-top: 0 ;
+    margin-bottom: 0;
+    width: 100%;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+}

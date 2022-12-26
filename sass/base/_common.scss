@@ -1,0 +1,16 @@
+.link{
+    text-decoration: none;
+    color:var(--title-text-color);
+    font-style: normal;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+.list{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.list .link:hover,
+.list .link:focus{
+    color:var(--accent-color);
+}
