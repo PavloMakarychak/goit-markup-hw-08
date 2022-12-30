@@ -110,7 +110,7 @@ body {
 .navigation__link,
 .contacts__link {
   display: block;
-  align-items: flex-end;
+  align-items: center;
 }
 @media screen and (min-width: 1200px) {
   .activ,
@@ -204,6 +204,7 @@ body {
 .contacts-mail__link,
 .contacts-tel__link {
   display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -223,6 +224,10 @@ body {
   .contacts-mail__link {
     margin-bottom: 0px;
   }
+}
+
+.menu-open {
+  margin-left: auto;
 }
 
 .hero {
