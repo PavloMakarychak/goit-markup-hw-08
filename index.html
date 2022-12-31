@@ -36,11 +36,19 @@
                 <use href="./images/icomoon/icons.svg#icon-Vector-4-1"></use>
             </svg>+38 096 111 11 11</a></li>
     </ul>
-        <!-- <button type="button" class="menu-open">M</button> -->
+        <button type="button" class="menu-open is-open" 
+        aria-expanded="false"
+        aria-controls="mob-menu" data-menu-button>
+        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="menu-icon" href="./images/icomoon/icons.svg#icon-menu"></use>
+            <use class="cross-icon" href="./images/icomoon/icons.svg#icon-close-black"></use>
+            
+        </svg>
+        </button>
     </div>
-    <!-- <div class="mob-menu">
+    <div class="mob-menu is-open" id="mob-menu" data-menu-open>
     <div class="container">
-        <button type="button" class="mob-menu-close">X</button>
+        <button type="button" class="mob-menu-close" data-menu-close>X</button>
         <nav class="mob-navigation">
             <ul class="mob-navigation__list list">
                 <li class="mob-navigation__item"><a href="/" class="mob-navigation__link activ link">Студія</a></li>
@@ -71,7 +79,6 @@
             </ul>
         </div>
     </div>
-    </div> -->
     </div>
  </header> 
     
@@ -422,5 +429,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

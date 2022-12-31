@@ -1,5 +1,7 @@
 
 .header{
+    position: relative;
+
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color:#ECECEC;
@@ -119,7 +121,7 @@
      letter-spacing: 0.02em;
      color:var(--primary-text-color);
      &:hover,
-     &k:focus{
+     &:focus{
      fill: var(--accent-color);
  }
  }
@@ -132,6 +134,47 @@
     }
  }
 
+
+
+//  Menu button
  .menu-open{
     margin-left: auto;
+    display: inline-block;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    &:hover,
+    :focus{
+        cursor:pointer ;
+        fill: var(--accent-color);
+    }
+    @media screen and(min-width: 768px) {
+        display: none;
+    }
+ }
+ .menu-open .cross-icon{
+    display: none;
+ }
+ .menu-open.is-open .cross-icon{
+    display: block;
+ }
+ .menu-open.is-open .menu-icon{
+    display: none;
+ }
+
+//  Menu modal
+ .mob-menu{
+    display: none;
+   
+
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: var(--accent-color);
+    text-align: center;
+    &.is-open{
+        display: block;
+    }
  }

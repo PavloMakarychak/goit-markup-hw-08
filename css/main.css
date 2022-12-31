@@ -85,6 +85,7 @@ body {
 }
 
 .header {
+  position: relative;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ECECEC;
@@ -210,9 +211,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.contacts-mail__link:hover, .contacts-mail__linkk:focus,
+.contacts-mail__link:hover, .contacts-mail__link:focus,
 .contacts-tel__link:hover,
-.contacts-tel__linkk:focus {
+.contacts-tel__link:focus {
   fill: var(--accent-color);
 }
 
@@ -228,6 +229,45 @@ body {
 
 .menu-open {
   margin-left: auto;
+  display: inline-block;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+}
+.menu-open:hover,
+.menu-open :focus {
+  cursor: pointer;
+  fill: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+.menu-open .cross-icon {
+  display: none;
+}
+
+.menu-open.is-open .cross-icon {
+  display: block;
+}
+
+.menu-open.is-open .menu-icon {
+  display: none;
+}
+
+.mob-menu {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: var(--accent-color);
+  text-align: center;
+}
+.mob-menu.is-open {
+  display: block;
 }
 
 .hero {
