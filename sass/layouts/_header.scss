@@ -59,6 +59,7 @@
 
  .activ.link { 
      text-decoration: none;
+     font-weight: 500;
      font-size: 14px;
      line-height: 1.14;
      letter-spacing: 0.02em;
@@ -165,16 +166,97 @@
 //  Menu modal
  .mob-menu{
     display: none;
-   
-
-
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    background-color: var(--accent-color);
-    text-align: center;
+    // height: 100%;
+    // height: 100vh;
+    // width: 100vw;
+    // left: 0;
+    background-color: tan;
+    
+    // text-align: center;
     &.is-open{
         display: block;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color: tan;
+        padding: 21px 0px;
+    }
+    &.container{
+        display: block;
+        height: 100%;
+        padding: 21px 0px;
     }
  }
+ .mob-menu-close{
+    display: block;
+    border: none;
+    margin-left: auto;
+    margin-right: 0px;
+ }
+  .mob-navigation__link.activ.link {
+    font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+      color: var(--accent-color);
+      background-color: tan;
+  }
+  .mob-navigation__link.activ.link::after{
+    display: none;
+  }
+ .mob-navigation__list{
+    font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+ }
+ .mob-navigation__link .activ{
+
+ }
+ .mob-navigation__list .mob-navigation__item:not(:last-child) {
+     margin-bottom: 32px;
+ }
+ .mob-navigation{
+    margin-bottom: 306px;
+
+ }
+
+ .mob-contacts-tel__link{
+    font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: #2196F3;
+    
+ }
+ .mob-contacts-mail__link{
+    font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: #757575;
+        margin-top: 32px;
+ }
+ .mob-contacts__item:not(:last-child){
+     margin-bottom: 32px;
+ }
+ .mob-contacts__item:last-child{
+    margin-bottom: 64px;
+ }
+ .mob-soc-items{
+    font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: #2196F3;
+ }
+ .mob-soc-list.list{
+     display: flex; 
+ }
+ .mob-soc-items:not(:last-child){
+    margin-right: 20px;
+ }
+
+
+
+ 
