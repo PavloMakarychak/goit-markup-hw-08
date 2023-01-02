@@ -1,7 +1,4 @@
  
-
-
-
 (() => {
     const refs = {
       openMenuRef: document.querySelector('.menu-open'),
