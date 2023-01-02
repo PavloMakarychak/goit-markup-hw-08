@@ -28,11 +28,16 @@
  .contacts__link{
      display: block;
      align-items: center;
+     
     @media screen and (min-width:1200px){
      padding-top: 32px;
      padding-bottom: 32px;
     }
- }    
+ } 
+ .contacts-tel__link{  
+    margin-right: 0px;
+ }
+ 
  
  .navigation__list .navigation__item:not(:last-child){
      margin-right: 50px;
@@ -101,6 +106,7 @@
  }
  
  
+ 
  .navigation__item{
      display: flex;
      align-items: center;
@@ -134,7 +140,10 @@
         margin-bottom: 0px;
     }
  }
-
+.contacts-tel__link{
+    margin-left: auto;
+    margin-right: 0;
+}
 
 
 //  Menu button
