@@ -41,16 +41,16 @@
         aria-controls="mob-menu" data-menu-button>
         <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use class="menu-icon" href="./images/icomoon/icons.svg#icon-menu"></use>
-            <use class="cross-icon" href="./images/icomoon/icons.svg#icon-close-black"></use>
+            <!-- <use class="cross-icon" href="./images/icomoon/icons.svg#icon-close-black"></use> -->
             
         </svg>
         </button>
     </div>
-    <div class="mob-menu is-open" id="mob-menu" data-menu-open>
+    <div class="mob-menu" data-menu-open>
     <div class="container">
-        <button type="button" class="mob-menu-close" data-menu-close>
-            <svg class="mob-menu-close-icons" width="18" height="18">
-                <use href="./images/icomoon/icons.svg#icon-close-black"></use>
+        <button type="button" class="mob-menu-close is-open" data-menu-close>
+            <svg  width="40" height="40">
+                <use class="cross-icon" href="./images/icomoon/icons.svg#icon-close-black"></use>
             </svg>
         </button>
         
@@ -73,21 +73,14 @@
         </ul>
         <div class="mob-soc ">
             <ul class="mob-soc-list list">
-                <li class="mob-soc-items">
-                    <!-- <a href="#" class="mob-soc-link link">Instagram
-                    <svg width="22" height="2" class="mob-soc-icons">
-                        <use href="./images/icomoon/icons.svg#icon-menu"></use>
-                    </svg>
-                    </a> -->
-                    <a href="#" class="mob-soc__link link">Instagram
-                        <svg width="20" height="20" class="mob-soc__icons">
-                            <use href="./images/icomoon/icons.svg#icon-line"></use>
-                        </svg>
-                    </a>
+                <li class="mob-soc-items"><a href="#" class="mob-soc__link link">Instagram</a>
                 </li>
-                <li class="mob-soc-items">Twitter</li>
-                <li class="mob-soc-items">Facebook</li>
-                <li class="mob-soc-items">LinkedIn</li>
+                <li class="mob-soc-items"><a href="#" class="mob-soc__link link">Twitter</a>
+                </li>
+                <li class="mob-soc-items"><a href="#" class="mob-soc__link link">Facebook</a>
+                </li>
+                <li class="mob-soc-items"><a href="#" class="mob-soc__link link">LinkedIn</a>
+                </li>
             </ul>
         </div>
     </div>

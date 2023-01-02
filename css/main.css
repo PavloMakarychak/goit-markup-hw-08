@@ -250,12 +250,12 @@ body {
   display: none;
 }
 
-.menu-open.is-open .cross-icon {
+.menu-open.is-open .menu-icon {
   display: block;
 }
 
-.menu-open.is-open .menu-icon {
-  display: none;
+.menu-open.is-open .cross-icon {
+  display: block;
 }
 
 .mob-menu {
@@ -336,7 +336,17 @@ body {
   margin-bottom: 64px;
 }
 
-.mob-soc-items {
+.mob-soc-list.list {
+  display: flex;
+}
+
+.mob-soc-items:not(:last-child) {
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+
+.mob-soc__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -344,12 +354,8 @@ body {
   color: #2196F3;
 }
 
-.mob-soc-list.list {
-  display: flex;
-}
-
-.mob-soc-items:not(:last-child) {
-  margin-right: 20px;
+.mob-soc__link:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .hero {
