@@ -122,7 +122,8 @@
  .contacts-mail__link,
  .contacts-tel__link{
      display: flex;
-     align-items: center;
+     text-align: center;
+    //  align-items: center;
      font-weight: 500;
      line-height: 1.14;
      letter-spacing: 0.02em;
@@ -167,12 +168,15 @@
  }
  .menu-open .menu-icon{
     display: block;
+
  }
  .menu-open.is-open .menu-icon{
     display: block;
+    
  }
  .menu-open.is-open .cross-icon{
     display: block;
+    
  }
 
 //  Menu modal
@@ -185,35 +189,87 @@
     color: var(--accent-color);
     cursor: pointer;
 }
- .mob-menu{
+
+.mob-menu{
     display: none;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     left: 0;
     top: 0;
-    &.is-open{
-        display: block;
+
+    &.is-open {
+        display: flex;
+        flex-wrap: wrap;
         position: fixed;
         height: 100vh;
         width: 100vw;
-        background-color:var(--primary-bg-color);
+        
+        background-color: var(--primary-bg-color);
         padding: 21px 0px;
     }
-    &.container{
-        display: block;
-        height: 100%;
-        padding: 21px 0px;
+    .mob-btn{
+        margin-right: 0;
+        margin-left: auto;
     }
-        @media screen and (min-width:768px){
-            opacity: 0;
-        }
- }
- .mob-menu-close{
-    display: block;
+
+    // &.container {
+    //     // display: block;
+    //     display: flex;
+    //     height: 100%;
+    //     padding: 21px 0px;
+    // }
+
+    @media screen and (min-width:768px) {
+        opacity: 0;
+    }
+}
+.mob-menu .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mob-menu-close.is-open{
+
+}
+
+.mob-menu-close {
+    display: flex;
     border: none;
     margin-left: auto;
     margin-right: 0px;
- }
+}
+//  .mob-menu{
+//     display: none;
+//     height: 100vh;
+//     width: 100vw;
+//     left: 0;
+//     top: 0;
+//     &.is-open{
+//         display: block;
+//         position: fixed;
+//         height: 100vh;
+//         width: 100vw;
+//         background-color:var(--primary-bg-color);
+//         padding: 21px 0px;
+//     }
+//     &.container{
+//         display: block;
+//         height: 100vh;
+//         padding: 21px 0px;
+//     }
+//         @media screen and (min-width:768px){
+//             opacity: 0;
+//         }
+//  }
+//  .mob-menu-close{
+//     display: block;
+//     border: none;
+//     margin-left: auto;
+//     margin-right: 0px;
+//  }
+
+.mob-navigation{
+    width: 100%;
+}
   .mob-navigation__link.activ.link {
     font-weight: 500;
         font-size: 40px;
@@ -239,7 +295,8 @@
      margin-bottom: 32px;
  }
  .mob-navigation{
-    margin-bottom: 306px;
+    display: flex;
+    flex-wrap: wrap;
 
  }
 
